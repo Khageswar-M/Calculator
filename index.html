@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="calculator">
+            <div class="output">
+                <input type="text" id="calculations" autocomplete="off">
+                <br>
+                <input type="text" id="res" style="color: #a8a8a8;" autocomplete="off" readonly>
+            </div>
+            <div class="separator"></div>
+            <div class="btn">
+                <input type="button" class="special" value="mc" onclick="">
+                <input type="button" class="special" value="m+" onclick="">
+                <input type="button" class="special" value="m-" onclick="">
+                <input type="button" class="special" value="mr" onclick="">
+                <br>
+                <input type="button" value="AC" onclick="clearInput()" class="operator">
+                <input type="button" value="⌫" onclick="backspace()" class="operator">
+                <input type="button" value="+/-" onclick="" class="operator">
+                <input type="button" value="/" onclick="solve('/')" class="operator">
+                <br>
+                <input type="button" class="digit" value="7" onclick="solve('7')">
+                <input type="button" class="digit" value="8" onclick="solve('8')">
+                <input type="button" class="digit" value="9" onclick="solve('9')">
+                <input type="button" value="x" onclick="solve('*')" class="operator">
+                <br>
+                <input type="button" class="digit" value="4" onclick="solve('4')">
+                <input type="button" class="digit" value="5" onclick="solve('5')">
+                <input type="button" class="digit" value="6" onclick="solve('6')">
+                <input type="button" value="-" onclick="solve('-')" class="operator">
+                <br>
+                <input type="button" class="digit" value="1" onclick="solve('1')">
+                <input type="button" class="digit" value="2" onclick="solve('2')">
+                <input type="button" class="digit" value="3" onclick="solve('3')">
+                <input type="button" value="+" onclick="solve('+')" class="operator">
+                <br>
+                <input type="button" value="%" onclick="solve('%')" class="operator">
+                <input type="button" class="digit" value="0" onclick="solve('0')">
+                <input type="button" class="digit" value="." onclick="solve('.')">
+                <input type="button" value="=" onclick="result()" class="operator" style="color: white;background-color: #352cff;">
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

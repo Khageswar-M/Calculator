@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-col: #000000;
+    --secondry-col: #1313a9;
+    --font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #29296c;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    min-height: 100px;
+    background-color: var(--primary-col);
+    width: 370px;
+    border-radius: 15px;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.output{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 5px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 5px;
+    height: 118px;
+}
+#res{
+    position: relative;
+    top: 0px;
+    font-size: 1.7rem;
+}
+#calculations{
+    position: relative;
+    top: 25px;
+}
+.output input{
+    width: 97%;
+    height: 60px;
+    font-size: 2.3rem;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: #0e0eff;
+    background-color: var(--primary-col);
+}
+.separaotr{
+    height: 1px;
+    width: 97%;
+    background-color: #3a3a3a;
+    position: relative;
+    top: 2px;
+}
+.btn input{
+    height: 70px;
+    width: 70px;
+    border-radius: 59px;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    margin: 7px 9px 3px;
+    background-color: var(--primary-col);
+}
+.btn input:hover{
+    background-color: rgba(30, 30, 30, 0.588);
+}
+.btn input:active {
+    background-color: rgba(106, 106, 106, 0.588);
+    transition: background-color 100ms linear;
+}
+.special{
+    color: #646464;
+}
+.digit{
+    color: #c4c4c4;
+}
+.operator{
+    color: #0e0eff;
+}
